@@ -19,3 +19,4 @@ std = []
 [dependencies]
 embedded-hal = { version = "=1.0.0-alpha.10", path = "../embedded-hal" }
 critical-section = { version = "1.0" }
+defmt = { version = "0.3", optional = true }

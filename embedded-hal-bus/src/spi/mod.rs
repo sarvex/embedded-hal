@@ -16,6 +16,7 @@ pub use self::critical_section::*;
 
 /// Error type for [`ExclusiveDevice`] operations.
 #[derive(Copy, Clone, Eq, PartialEq, Debug)]
+#[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum DeviceError<BUS, CS> {
     /// An inner SPI bus operation failed
     Spi(BUS),
